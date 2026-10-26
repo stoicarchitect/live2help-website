@@ -20,6 +20,14 @@ NAV = [
     ('contact/', 'Contact'),
 ]
 
+
+SCHEMA = """<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"https://live2helprecruitment.co.uk/#website","name":"Live 2 Help Recruitment","alternateName":["Live 2 Help","L2H Recruitment"],"url":"https://live2helprecruitment.co.uk/"},
+{"@type":"EmploymentAgency","@id":"https://live2helprecruitment.co.uk/#org","name":"Live 2 Help Recruitment Ltd","url":"https://live2helprecruitment.co.uk/","logo":"https://live2helprecruitment.co.uk/assets/logo-mark.png","image":"https://live2helprecruitment.co.uk/assets/og-image.png","email":"office@live2helprecruitment.co.uk","telephone":"+44 1902 945444","areaServed":"GB","slogan":"Anyone. Anywhere. Anytime.","sameAs":["https://www.linkedin.com/company/live-2-help-recruitment"]}
+]}
+</script>"""
+
 def careers(path, medium, content):
     return ('https://careers.live2helprecruitment.co.uk/' + path +
             '?utm_source=website&utm_medium=' + medium + '&utm_content=' + content)
@@ -44,7 +52,9 @@ def head(title, desc, R, canonical, noindex=False):
 <meta property="og:url" content="{DOMAIN}/{canonical}">
 <meta property="og:image" content="{DOMAIN}/assets/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{R}favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" href="{R}assets/favicon.png">
+{SCHEMA if canonical == '' else ''}
 <link rel="apple-touch-icon" href="{R}assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
