@@ -189,6 +189,8 @@ def main():
         sm.append(f'  <url><loc>{DOMAIN}/{u}</loc><lastmod>{today}</lastmod></url>')
     sm.append('</urlset>')
     write('sitemap.xml', '\n'.join(sm) + '\n')
+    write('CNAME', 'live2helprecruitment.co.uk\n')
+    write('.nojekyll', '')
     write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {DOMAIN}/sitemap.xml\n')
     print('built', len(PAGES) + len(LEGAL), 'pages and', len(REDIRECTS), 'redirects')
 

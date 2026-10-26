@@ -43,16 +43,14 @@
 <section class="sec">
 <div class="wrap split">
 <div>
-<form class="form" id="contact-form" action="https://formspree.io/f/xjgjpdvp" method="POST" novalidate>
-<input type="hidden" name="_subject" value="New website enquiry - live2helprecruitment.co.uk">
-<input type="hidden" name="source" value="direct">
-<div class="hp" aria-hidden="true"><label for="gotcha">Leave this empty</label><input id="gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+<form class="form" id="contact-form" action="https://l2h-api.onrender.com/api/website-enquiry" method="POST" novalidate>
+<div class="hp" aria-hidden="true"><label for="website">Leave this empty</label><input id="website" type="text" name="website" tabindex="-1" autocomplete="off"></div>
 <div>
 <label for="enquiry_type">I am</label>
 <select id="enquiry_type" name="enquiry_type" required>
-<option value="Employer - hiring">An employer looking to hire</option>
-<option value="Candidate - looking for work">A candidate looking for work</option>
-<option value="Other">Something else</option>
+<option value="employer">An employer looking to hire</option>
+<option value="candidate">A candidate looking for work</option>
+<option value="other">Something else</option>
 </select>
 </div>
 <div class="two">
@@ -64,7 +62,7 @@
 <div><label for="phone">Phone (optional)</label><input id="phone" type="tel" name="phone" autocomplete="tel"></div>
 </div>
 <div><label for="message">How can we help?</label><textarea id="message" name="message" required placeholder="For a vacancy, tell us the role, location and salary range."></textarea></div>
-<label class="consent"><input type="checkbox" name="consent" value="Yes" required><span>I agree to Live 2 Help Recruitment using these details to reply to my enquiry, as set out in the <a class="tlink" href="../legal/privacy-policy/">privacy policy</a>.</span></label>
+<label class="consent"><input type="checkbox" id="consent" name="consent" value="yes" required><span>I agree to Live 2 Help Recruitment using these details to reply to my enquiry, as set out in the <a class="tlink" href="../legal/privacy-policy/">privacy policy</a>.</span></label>
 <div><button class="btn btn-gold" type="submit">Send message</button></div>
 <div class="form-msg" id="form-msg" role="status" aria-live="polite"></div>
 </form>
