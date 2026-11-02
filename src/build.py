@@ -202,6 +202,13 @@ def main():
     write('CNAME', 'live2helprecruitment.co.uk\n')
     write('.nojekyll', '')
     write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {DOMAIN}/sitemap.xml\n')
+    # Private client tools: copied as-is, never linked, never in the sitemap
+    sa = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'standalone')
+    if os.path.isdir(sa):
+        for fn in sorted(os.listdir(sa)):
+            if fn.endswith('.html'):
+                with open(os.path.join(sa, fn), encoding='utf-8') as fh:
+                    write(f'{fn[:-5]}/index.html', fh.read())
     print('built', len(PAGES) + len(LEGAL), 'pages and', len(REDIRECTS), 'redirects')
 
 if __name__ == '__main__':
