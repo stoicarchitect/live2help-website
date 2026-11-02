@@ -378,6 +378,16 @@ tr:last-child td{border-bottom:0}
       $('monthLine').textContent='Below that, our standard per-hire fees cost you less. Your hiring may grow, so it is worth a conversation.';
     }
 
+    var ent=beats&&r.units>30;
+    if(ent){
+      $('bestTag').textContent='Your best fit';
+      $('bestName').textContent='Enterprise plan';
+      $('bestAmt').textContent='Built around you';
+      $('bestSub').textContent='Above 30 hires a year we agree a custom plan with you. The saving below is based on our Scale plan.';
+      $('saveLabel').textContent=speed>0?'Your total gain every year, based on Scale':'You keep every year, based on Scale';
+      $('monthLine').innerHTML='That is <b>'+gbp(saving/12)+' a month</b> you are overpaying in agency fees today. Book a call and we will build your Enterprise plan.';
+    }
+
     if(seatOn && weeks*seat>0){
       $('seatLine').hidden=false;
       $('seatLine').innerHTML='Each role filled <b>'+weeks+' week'+(weeks>1?'s':'')+' sooner</b> saves you about <b>'+gbp(weeks*seat)+'</b> in lost output. Across '+h+' hire'+(h>1?'s':'')+' that is <b>'+gbp(speed)+'</b> a year'+(beats?', included in your total gain above.':'.');
@@ -402,7 +412,7 @@ tr:last-child td{border-bottom:0}
     // Table
     $('rows').innerHTML=r.rows.map(function(x){
       var sv=x.base?'':(r.base-x.annual>0?gbp(r.base-x.annual):'No saving');
-      return '<tr'+(beats&&x===best?' class="best"':'')+'><td>'+x.name+(beats&&x===best?'<span class="pill">Best fit</span>':'')+'</td>'+
+      return '<tr'+(beats&&x===best?' class="best"':'')+'><td>'+x.name+(beats&&x===best?'<span class="pill">'+(ent?'Saving based on':'Best fit')+'</span>':'')+'</td>'+
         '<td>'+(x.monthly==null?'Per hire':gbp(x.monthly))+'</td><td>'+(x.incl||'')+'</td><td>'+(x.extra||'')+'</td>'+
         '<td'+(x.base?' class="lossv"':(beats&&x===best?' class="winv"':''))+'>'+gbp(x.annual)+'</td><td>'+sv+'</td></tr>';
     }).join('');
