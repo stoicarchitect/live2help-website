@@ -236,6 +236,7 @@ CANDIDATE = f'''<p>This notice explains how Live 2 Help Recruitment Ltd uses the
 <p>We first send a client an anonymised version of your CV. We share your name and contact details only when you agree to be put forward for that role. We also use suppliers who help us run the business, such as email, document storage, payment and workspace hosting providers, under written terms. We do not sell your data. If a supplier is based outside the UK, we use a lawful transfer route.</p>
 <h2>How long we keep it</h2>
 <p>We keep your data while we are actively working with you, and for up to 24 months after our last meaningful contact, then delete or anonymise it. Where we are required to keep records for longer, for example for a placement, we keep only what is needed.</p>
+<p>If you join our talent pool, we keep your details for up to 12 months from the date you agree. Before then we email you to ask whether you would like us to keep them, and if we do not hear back we delete them.</p>
 <h2>Your rights</h2>
 <p>You can ask us to see your data, correct it, delete it, restrict or object to how we use it, and receive a copy in a portable format where it applies. You can withdraw consent at any time. Email <a class="tlink" href="mailto:info@live2helprecruitment.co.uk">info@live2helprecruitment.co.uk</a> and we will reply within one month. If you are unhappy, you can complain to the Information Commissioner's Office at <a class="tlink" href="https://ico.org.uk" rel="noopener" target="_blank">ico.org.uk</a>.</p>
 <h2>Decisions made by people</h2>
