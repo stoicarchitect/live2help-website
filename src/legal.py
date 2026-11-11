@@ -9,6 +9,8 @@ OFFICE = '<a class="tlink" href="mailto:office@live2helprecruitment.co.uk">offic
 LEGAL_NAV = [
     ('legal/website-terms/', 'Website terms'),
     ('legal/privacy-policy/', 'Privacy policy'),
+    ('legal/candidate-privacy-notice/', 'Candidate privacy notice'),
+    ('legal/client-privacy-notice/', 'Client privacy notice'),
     ('legal/ethical-behaviour-policy/', 'Ethical behaviour'),
     ('legal/child-labour-policy/', 'Child labour'),
     ('legal/whistleblowing-policy/', 'Whistleblowing'),
@@ -73,7 +75,8 @@ TERMS = f'''<p>This page, together with the documents referred to on it, tells y
 <p>If you have any concerns about material which appears on our site, please contact {OFFICE}.</p>
 <p>Thank you for visiting our site.</p>'''
 
-PRIVACY = f'''<p>Live 2 Help Recruitment Ltd ("the Company") is a recruitment business which provides work-finding services to its Clients and Candidates. The Company must process personal data (including sensitive personal data) so that it can provide these services, and in doing so the Company is responsible for your personal data. You may give your personal details to the Company directly, such as on an application or registration form or via our websites, or we may collect them from another source such as a jobs board. The Company must have a legal basis for processing your personal data. For the purposes of providing you with work-finding services and/or information relating to roles relevant to you, we will only use your personal data in accordance with this notice.</p>
+PRIVACY = f'''<p>Our <a class="tlink" href="{{R}}legal/candidate-privacy-notice/">Candidate Privacy Notice</a> and <a class="tlink" href="{{R}}legal/client-privacy-notice/">Client Privacy Notice</a> set out in full how we use personal data about candidates and about client contacts. They are our current notices for those groups. Live 2 Help Recruitment Ltd is registered with the Information Commissioner's Office (ICO registration number ZC296949), and our registered office is 20 Chester Street, Wolverhampton, WV6 0PY.</p>
+<p>Live 2 Help Recruitment Ltd ("the Company") is a recruitment business which provides work-finding services to its Clients and Candidates. The Company must process personal data (including sensitive personal data) so that it can provide these services, and in doing so the Company is responsible for your personal data. You may give your personal details to the Company directly, such as on an application or registration form or via our websites, or we may collect them from another source such as a jobs board. The Company must have a legal basis for processing your personal data. For the purposes of providing you with work-finding services and/or information relating to roles relevant to you, we will only use your personal data in accordance with this notice.</p>
 <p>This notice will be updated as required.</p>
 <h2>1. Definitions</h2>
 <ul>
@@ -116,7 +119,7 @@ PRIVACY = f'''<p>Live 2 Help Recruitment Ltd ("the Company") is a recruitment bu
 <h2>5. Data retention</h2>
 <p>The Company will retain your personal data only for as long as is necessary. Different laws require us to keep different data for different periods of time.</p>
 <p>The Conduct of Employment Agencies and Employment Businesses Regulations 2003 require us to keep work-seeker records for at least one year from (a) the date of their creation or (b) the date on which we last provided you with work-finding services. We must also keep payroll, holiday pay, sick pay and pensions auto-enrolment records for as long as is legally required by HMRC and associated legislation.</p>
-<p>If you are a Candidate or Client and the Company has had no meaningful contact with you for a period of 3 years, your personal data will be deleted unless we are required to keep it by law, for a regulatory body or for tax or audit purposes.</p>
+<p>If you are a Candidate and the Company has had no meaningful contact with you for a period of 24 months, your personal data will be deleted or anonymised. We keep Client records for up to 6 years after our working relationship ends. In each case we may keep data for longer where we are required to by law, for a regulatory body or for tax or audit purposes.</p>
 <h2>6. Your rights</h2>
 <p>Under Data Protection Legislation, you have the following rights:</p>
 <ul>
@@ -207,9 +210,70 @@ WHISTLE = f'''<h2>Scope</h2>
 <p>If, after reporting a concern and receiving feedback, you are still not satisfied, you are entitled to report it to a relevant external body, known as a prescribed person. Free, confidential advice is available from the charity Protect at <a class="tlink" href="https://protect-advice.org.uk/" rel="noopener">protect-advice.org.uk</a>.</p>
 <p>The terms of this policy do not affect your statutory rights under the Public Interest Disclosure Act 1998.</p>'''
 
+CANDIDATE = f'''<p>This notice explains how Live 2 Help Recruitment Ltd uses the personal data of job seekers who register with us, apply for roles we advertise, or are approached by us. It covers candidates for permanent roles. Reference L2H-POL-002, version 1.0, effective 10 November 2026.</p>
+<h2>Who we are</h2>
+<p>Live 2 Help Recruitment Ltd (Company No. 11731080) is the controller of your personal data. We act as an employment agency finding permanent roles. Our registered office is 20 Chester Street, Wolverhampton, WV6 0PY. We are registered with the Information Commissioner's Office (ICO registration number ZC296949). You can contact us about your data at <a class="tlink" href="mailto:info@live2helprecruitment.co.uk">info@live2helprecruitment.co.uk</a>.</p>
+<h2>What we collect</h2>
+<ul>
+<li>Contact details, such as your name, email, phone number and location.</li>
+<li>Your CV and career details, including work history, qualifications, skills, current and desired salary, notice period and job preferences.</li>
+<li>Information from interviews and calls with us, and your answers on application forms.</li>
+<li>References and pre-placement check results, only where you have agreed to them.</li>
+<li>Right to work documents, only if we are asked to check them as part of a placement.</li>
+<li>Optional equality monitoring information. You never have to provide this.</li>
+</ul>
+<h2>Where it comes from</h2>
+<p>Mostly from you. We may also collect it from job boards, public professional profiles such as LinkedIn, referees, and clients.</p>
+<h2>Why we use it and our legal basis</h2>
+<ul>
+<li>To find you suitable work and put you forward to clients. Our basis is legitimate interests, because that is what you expect from a recruiter, and your consent where we ask for it.</li>
+<li>To arrange interviews, give feedback and support you through an offer. Our basis is legitimate interests, and taking steps at your request before a contract.</li>
+<li>To run pre-placement checks. Our basis is your consent.</li>
+<li>To meet legal duties and defend legal claims. Our basis is legal obligation and legitimate interests.</li>
+<li>To send you vacancies and career updates. Our basis is legitimate interests or consent, and you can opt out at any time.</li>
+</ul>
+<h2>Who we share it with</h2>
+<p>We first send a client an anonymised version of your CV. We share your name and contact details only when you agree to be put forward for that role. We also use suppliers who help us run the business, such as email, document storage, payment and workspace hosting providers, under written terms. We do not sell your data. If a supplier is based outside the UK, we use a lawful transfer route.</p>
+<h2>How long we keep it</h2>
+<p>We keep your data while we are actively working with you, and for up to 24 months after our last meaningful contact, then delete or anonymise it. Where we are required to keep records for longer, for example for a placement, we keep only what is needed.</p>
+<h2>Your rights</h2>
+<p>You can ask us to see your data, correct it, delete it, restrict or object to how we use it, and receive a copy in a portable format where it applies. You can withdraw consent at any time. Email <a class="tlink" href="mailto:info@live2helprecruitment.co.uk">info@live2helprecruitment.co.uk</a> and we will reply within one month. If you are unhappy, you can complain to the Information Commissioner's Office at <a class="tlink" href="https://ico.org.uk" rel="noopener" target="_blank">ico.org.uk</a>.</p>
+<h2>Decisions made by people</h2>
+<p>We do not make hiring decisions using automated tools alone. A member of our team reviews every submission.</p>
+<p>Our full <a class="tlink" href="{{R}}legal/privacy-policy/">privacy policy</a> covers the rest of our work, including our website and online tools.</p>'''
+
+CLIENT = f'''<p>This notice explains how Live 2 Help Recruitment Ltd uses the personal data of people who work for our clients and prospective clients, such as hiring managers, HR contacts and directors. It covers business contacts at client and prospective client organisations. Reference L2H-POL-003, version 1.0, effective 10 November 2026.</p>
+<h2>Who we are</h2>
+<p>Live 2 Help Recruitment Ltd (Company No. 11731080) is the controller of your personal data. Our registered office is 20 Chester Street, Wolverhampton, WV6 0PY. We are registered with the Information Commissioner's Office (ICO registration number ZC296949). Contact us about your data at <a class="tlink" href="mailto:info@live2helprecruitment.co.uk">info@live2helprecruitment.co.uk</a>.</p>
+<h2>What we collect</h2>
+<ul>
+<li>Your name, job title, employer, work email and phone number.</li>
+<li>Records of our conversations, emails, meetings, vacancies you brief us on, and feedback you give on candidates.</li>
+<li>Billing contact details and payment records for the services we provide.</li>
+<li>Information about your business and hiring needs.</li>
+</ul>
+<h2>Where it comes from</h2>
+<p>From you, from your company, from publicly available professional sources such as LinkedIn and company websites, and from referrals.</p>
+<h2>Why we use it and our legal basis</h2>
+<ul>
+<li>To agree terms, fill your vacancies and manage our service. Our basis is contract, or steps taken before a contract at your request.</li>
+<li>To send invoices and keep financial records. Our basis is contract and legal obligation.</li>
+<li>To tell you about our services and relevant candidates. Our basis is legitimate interests. For emails to sole traders and some partnerships, which the law treats as individuals, we ask for your consent first. You can opt out at any time.</li>
+<li>To keep records and defend legal claims. Our basis is legitimate interests.</li>
+</ul>
+<h2>Who we share it with</h2>
+<p>We share your details with candidates only as needed to arrange interviews. We use suppliers who help us run the business, such as email, document storage, payment and workspace hosting providers, under written terms. We do not sell your data. If a supplier is based outside the UK, we use a lawful transfer route.</p>
+<h2>How long we keep it</h2>
+<p>We keep client records while we work with you and for up to 6 years afterwards, because of contract and tax record requirements. Marketing contact details are removed if you opt out or when they go out of date.</p>
+<h2>Your rights</h2>
+<p>You can ask us to see your data, correct it, delete it, restrict or object to how we use it, and receive a copy in a portable format where it applies. Email <a class="tlink" href="mailto:info@live2helprecruitment.co.uk">info@live2helprecruitment.co.uk</a> and we will reply within one month. If you are unhappy, you can complain to the Information Commissioner's Office at <a class="tlink" href="https://ico.org.uk" rel="noopener" target="_blank">ico.org.uk</a>.</p>
+<p>Our full <a class="tlink" href="{{R}}legal/privacy-policy/">privacy policy</a> covers the rest of our work, including our website and online tools.</p>'''
+
 LEGAL = [
     dict(path='legal/website-terms/', title='Website Terms of Use | Live 2 Help Recruitment', desc='The terms on which you may use the Live 2 Help Recruitment website.', body=wrap('legal/website-terms/', 'Website terms of use', TERMS), medium='legal'),
     dict(path='legal/privacy-policy/', title='Privacy Policy | Live 2 Help Recruitment', desc='How Live 2 Help Recruitment collects, uses and protects personal data for candidates, clients and suppliers.', body=wrap('legal/privacy-policy/', 'Privacy policy', PRIVACY), medium='legal'),
+    dict(path='legal/candidate-privacy-notice/', title='Candidate Privacy Notice | Live 2 Help Recruitment', desc='How Live 2 Help Recruitment uses the personal data of job seekers and candidates.', body=wrap('legal/candidate-privacy-notice/', 'Candidate privacy notice', CANDIDATE), medium='legal'),
+    dict(path='legal/client-privacy-notice/', title='Client Privacy Notice | Live 2 Help Recruitment', desc='How Live 2 Help Recruitment uses the personal data of client and prospective client contacts.', body=wrap('legal/client-privacy-notice/', 'Client privacy notice', CLIENT), medium='legal'),
     dict(path='legal/ethical-behaviour-policy/', title='Ethical Behaviour Policy | Live 2 Help Recruitment', desc='Our policy on ethical conduct and the prevention of bribery under the Bribery Act 2010.', body=wrap('legal/ethical-behaviour-policy/', 'Ethical behaviour policy', ETHICAL), medium='legal'),
     dict(path='legal/child-labour-policy/', title='Child Labour and Forced Labour Policy | Live 2 Help Recruitment', desc='Our statement of principles on child labour and forced labour.', body=wrap('legal/child-labour-policy/', 'Child labour and forced labour policy', CHILD), medium='legal'),
     dict(path='legal/whistleblowing-policy/', title='Whistleblowing Policy | Live 2 Help Recruitment', desc='How to raise a serious concern about Live 2 Help Recruitment, in confidence and without fear of reprisal.', body=wrap('legal/whistleblowing-policy/', 'Whistleblowing policy', WHISTLE), medium='legal'),
