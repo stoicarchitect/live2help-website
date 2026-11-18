@@ -3,7 +3,7 @@
 # emails consolidated to office@, legislation names brought up to date,
 # and text copied from another company's policy removed.
 
-UPDATED = 'Last updated October 2026'
+UPDATED = 'Last updated November 2026'
 OFFICE = '<a class="tlink" href="mailto:office@live2helprecruitment.co.uk">office@live2helprecruitment.co.uk</a>'
 
 LEGAL_NAV = [
@@ -234,6 +234,8 @@ CANDIDATE = f'''<p>This notice explains how Live 2 Help Recruitment Ltd uses the
 </ul>
 <h2>Who we share it with</h2>
 <p>We first send a client an anonymised version of your CV. We share your name and contact details only when you agree to be put forward for that role. We also use suppliers who help us run the business, such as email, document storage, payment and workspace hosting providers, under written terms. We do not sell your data. If a supplier is based outside the UK, we use a lawful transfer route.</p>
+<h2>Emails between us and you</h2>
+<p>We keep a record of emails between our team and you. This is the subject, date and a short preview of the message, kept on your record so we can follow up properly. We do not store attachments. We rely on legitimate interests to do this. We keep the subject for as long as the rest of your record and the preview for up to 12 months. You can ask us to stop logging email with you at any time.</p>
 <h2>How long we keep it</h2>
 <p>We keep your data while we are actively working with you, and for up to 24 months after our last meaningful contact, then delete or anonymise it. Where we are required to keep records for longer, for example for a placement, we keep only what is needed.</p>
 <p>If you join our talent pool, we keep your details for up to 12 months from the date you agree. Before then we email you to ask whether you would like us to keep them, and if we do not hear back we delete them.</p>
@@ -264,6 +266,8 @@ CLIENT = f'''<p>This notice explains how Live 2 Help Recruitment Ltd uses the pe
 </ul>
 <h2>Who we share it with</h2>
 <p>We share your details with candidates only as needed to arrange interviews. We use suppliers who help us run the business, such as email, document storage, payment and workspace hosting providers, under written terms. We do not sell your data. If a supplier is based outside the UK, we use a lawful transfer route.</p>
+<h2>Emails between us and you</h2>
+<p>We keep a record of emails between our team and you as a client contact. This is the subject, date and a short preview of the message, kept on your record so we can follow up properly. We do not store attachments. We rely on legitimate interests to do this. We keep the subject for as long as the rest of your record and the preview for up to 12 months. You can ask us to stop logging email with you at any time.</p>
 <h2>How long we keep it</h2>
 <p>We keep client records while we work with you and for up to 6 years afterwards, because of contract and tax record requirements. Marketing contact details are removed if you opt out or when they go out of date.</p>
 <h2>Your rights</h2>
