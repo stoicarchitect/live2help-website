@@ -8,7 +8,13 @@ REVIEWS = [
     ("Wow, a fabulous support and guidance service from start to finish. Very unusual these days to have such detailed guidance on correct preparation. Dan is an expert in his field.", False),
 ]
 
-def reviews_block(heading='Trusted by employers and candidates', medium_note=True):
+TM_BLOCK = '''<div class="tm" id="tm" data-api="https://api.live2helprecruitment.co.uk/api/testimonials" hidden>
+<span class="kick">From our clients</span>
+<h3 class="tm-h">What employers say about working with us</h3>
+<div class="tm-grid" id="tm-grid"></div>
+</div>'''
+
+def reviews_block(heading='Trusted by employers and candidates', medium_note=True, clients=True):
     cards = []
     for text, hero in REVIEWS:
         cls = 'rv hero-rv' if hero else 'rv'
@@ -19,6 +25,7 @@ def reviews_block(heading='Trusted by employers and candidates', medium_note=Tru
 <h2 class="h2">{heading}</h2>
 <div class="score"><b>5.0</b><div><div class="stars">★★★★★</div><div>Rated on Google</div></div></div>
 <div class="g3">{''.join(cards)}</div>
+{TM_BLOCK if clients else ''}
 <div class="btns mt"><a class="btn btn-ink arrow" href="https://g.page/r/CU5L4ObMovbGEBM/review" rel="noopener">Read all Google reviews</a></div>
 </div>
 </section>
@@ -335,7 +342,7 @@ CANDIDATES = f'''<section class="dark page-hero">
 </div>
 </section>
 
-{reviews_block('What candidates say about us')}'''
+{reviews_block('What candidates say about us', clients=False)}'''
 
 def sectors_page():
     cards = []

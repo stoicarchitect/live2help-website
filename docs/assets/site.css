@@ -161,7 +161,7 @@ a.tile:hover{border-color:var(--gold);background:var(--navy-2)}
 .score{display:flex;align-items:center;justify-content:center;gap:16px;margin:26px 0 40px}
 .score b{font-family:var(--display);font-size:58px;color:var(--ink);line-height:1}
 .score .stars{font-size:24px}
-.rv{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:30px;text-align:left;display:flex;flex-direction:column}
+.rv{margin:0;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:30px;text-align:left;display:flex;flex-direction:column}
 .rv blockquote{margin:14px 0 18px;font-style:italic;color:var(--ink);line-height:1.7;flex:1}
 .rv cite{font-style:normal;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);font-family:var(--display);font-weight:600}
 .rv.hero-rv{grid-column:1/-1;background:var(--navy);border-color:var(--navy);border-left:4px solid var(--gold)}
@@ -245,5 +245,16 @@ a.tile:hover{border-color:var(--gold);background:var(--navy-2)}
 .fbase nav{display:flex;flex-wrap:wrap;gap:6px 20px}
 
 /* reveal */
+.tm{margin-top:64px;padding-top:56px;border-top:1px solid var(--line)}
+.tm-h{font-size:clamp(22px,3vw,30px);margin:0 auto 34px;max-width:24ch}
+.tm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:26px;text-align:left}
+.tm-grid.one{grid-template-columns:1fr;max-width:820px;margin-inline:auto}
+.tm-card{background:var(--navy);border:1px solid var(--navy);border-left:4px solid var(--gold);border-radius:var(--r);padding:32px;display:flex;flex-direction:column;margin:0}
+.tm-card .stars{font-size:18px}
+.tm-card blockquote{margin:16px 0 22px;color:#fff;line-height:1.7;flex:1;font-size:clamp(16px,1.6vw,18px)}
+.tm-card figcaption{border-top:1px solid var(--line-d);padding-top:16px}
+.tm-card figcaption b{display:block;font-family:var(--display);font-weight:600;color:#fff}
+.tm-card figcaption span{font-size:14px;color:var(--mute)}
+.tm-grid.one .tm-card blockquote{font-size:clamp(18px,2.2vw,22px)}
 .rv-in{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
 .rv-in.on{opacity:1;transform:none}
